@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     # 3rd Party Apps
     'bootstrap5',
     'django_filters',
+    'django_browser_reload',
     # MY APPS
     'todo',
 ]
@@ -53,6 +54,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    
+    "django_browser_reload.middleware.BrowserReloadMiddleware",
 ]
 
 ROOT_URLCONF = 'my_todo.urls'
